@@ -1,5 +1,6 @@
 ReservaYa: Plataforma de Reservas de Alojamientos
 
+
 📝 Descripción del Proyecto
 ReservaYa es una plataforma de reservas de alojamiento full-stack que gestiona productos, usuarios, seguridad y el flujo completo de reservas. El proyecto fue desarrollado demostrando la implementación de una Arquitectura RESTful de 3 Capas (Backend, Servicios y Datos), con un enfoque riguroso en la persistencia de datos (JPA) y la seguridad (JWT).
 
