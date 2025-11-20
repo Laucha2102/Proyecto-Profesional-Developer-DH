@@ -1,0 +1,347 @@
+.detalle-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.detalle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.detalle-header-info h2 {
+    margin: 0;
+}
+.detalle-header-info p {
+    margin: 0;
+    font-weight: 500;
+    color: #555;
+}
+
+.detalle-back-link {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1D8A99;
+}
+
+
+.detalle-galeria {
+    margin-top: 20px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.galeria-principal img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    display: block; 
+}
+
+.galeria-secundaria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.galeria-secundaria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria-ver-mas {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.galeria-ver-mas a {
+    text-decoration: none;
+    color: #333;
+}
+
+.detalle-descripcion {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.detalle-caracteristicas {
+    margin-top: 20px;
+}
+.detalle-caracteristicas ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.detalle-caracteristicas li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.detalle-disponibilidad {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.detalle-disponibilidad h3 {
+    margin-top: 0;
+}
+
+.calendario-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.react-datepicker {
+    font-family: inherit; 
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex; 
+    border-radius: 8px !important;
+}
+
+.react-datepicker__day--disabled {
+    background-color: #f1f1f1 !important;
+    color: #ccc !important;
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+
+.detalle-politicas {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.detalle-politicas .titulo-subrayado {
+    margin-top: 0;
+    border-bottom: 2px solid #1D8A99;
+    padding-bottom: 5px;
+    display: inline-block; 
+}
+
+.politicas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.politica-columna h4 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.politica-columna ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.politica-columna li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.politica-columna li strong {
+    display: block; 
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .politicas-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .politicas-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.detalle-ubicacion-share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+}
+
+.ubicacion-info {
+    font-weight: 500;
+    color: #333;
+}
+
+.share-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.share-buttons button {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.share-buttons button:hover {
+    opacity: 1;
+}
+
+
+
+.detalle-puntuacion-promedio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.detalle-puntuacion-promedio .react-simple-star-rating {
+    display: inline-flex !important;
+}
+
+.detalle-nueva-puntuacion {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+.detalle-nueva-puntuacion .form-group {
+    margin-bottom: 15px;
+}
+.detalle-nueva-puntuacion label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.detalle-nueva-puntuacion textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+.detalle-nueva-puntuacion .detalle-button {
+    background-color: #1D8A99;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.detalle-nueva-puntuacion .react-simple-star-rating {
+    display: block !important;
+}
+
+
+.detalle-lista-puntuaciones {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+.puntuaciones-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
+}
+.puntuacion-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+}
+.puntuacion-usuario {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+.puntuacion-comentario {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .puntuaciones-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.detalle-iniciar-reserva {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.detalle-iniciar-reserva p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.detalle-iniciar-reserva .detalle-button {
+    width: 100%;
+    max-width: 300px; 
+    font-size: 16px;
+    padding: 12px 20px;
+}
+
+.reserva-login-requerido {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff8e1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffecb3;
+}
+.reserva-login-requerido a {
+    color: #1D8A99;
+    font-weight: 600;
+}
+
+.detalle-precio {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+.detalle-precio span {
+    color: #1D8A99; 
+    font-size: 24px;
+}

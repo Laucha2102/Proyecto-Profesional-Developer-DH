@@ -1,0 +1,68 @@
+.mis-reservas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 60vh; 
+}
+
+.mis-reservas-container h2 {
+    border-bottom: 2px solid #1D8A99;
+    padding-bottom: 10px;
+    color: #2D3142; 
+}
+
+.reservas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.reserva-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.reserva-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.reserva-card-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.reserva-card-info h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.reserva-card-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.detalle-button-reserva {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto; 
+    font-weight: 600;
+}
+
+.detalle-button-reserva:hover {
+    background-color: #e9e9e9;
+}

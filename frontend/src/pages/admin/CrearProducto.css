@@ -1,0 +1,157 @@
+.crear-producto-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.crear-producto-container h2 {
+    text-align: center;
+    color: #2D3142; 
+}
+
+.crear-producto-form .form-group {
+    margin-bottom: 20px;
+}
+
+.crear-producto-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.crear-producto-form input[type="text"],
+.crear-producto-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.crear-producto-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.imagen-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.imagen-group input {
+    flex: 1;
+}
+
+.btn-remove, .btn-add {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-remove {
+    background-color: #E76F51;
+    color: white;
+}
+
+.btn-add {
+    background-color: #e9c46a;
+    color: #2D3142;
+    margin-top: 5px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #1D8A99; 
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #CED4DA;
+    margin: 20px 0;
+}
+
+.msg-exito {
+    color: #2A9D8F; 
+    text-align: center;
+    font-weight: bold;
+}
+
+.msg-error {
+    color: #E76F51;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.tabla-productos th, 
+.tabla-productos td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.tabla-productos th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.tabla-productos tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-eliminar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #cc0000; 
+}
+
+.caracteristicas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+.checkbox-item input {
+    margin-right: 8px;
+}

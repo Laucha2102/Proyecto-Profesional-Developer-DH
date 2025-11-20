@@ -1,0 +1,128 @@
+.footer-container {
+    width: 100%; 
+    background-color: #2D3142; 
+    color: #E0E0E0; 
+    padding: 40px 40px; 
+    box-sizing: border-box;
+    margin-top: auto; 
+    border-top: 4px solid #1D8A99; 
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr; 
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; 
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.footer-logo-img {
+    height: 45px; 
+    width: auto;
+    margin-bottom: 5px; 
+}
+
+.footer-copyright span {
+    font-size: 14px;
+    color: white; 
+}
+.footer-copyright p {
+    font-size: 13px;
+    font-style: italic;
+    color: #ccc; 
+    margin: 0;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-nav h4 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #ffffff; 
+    border-bottom: 1px solid #1D8A99; 
+    padding-bottom: 5px;
+    display: inline-block; 
+}
+.footer-nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-social {
+    justify-self: end;
+    text-align: right;
+}
+.footer-social h4 {
+     margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    border-bottom: 1px solid #1D8A99;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.social-icons-wrapper {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    justify-content: flex-end; 
+}
+.footer-social a {
+    color: white;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.footer-social a:hover {
+    transform: scale(1.2);
+    color: #1D8A99; 
+}
+
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr; 
+        justify-items: start;
+    }
+    .footer-social {
+        justify-self: start; 
+        text-align: left;
+    }
+    .social-icons-wrapper {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        grid-template-columns: 1fr; 
+        justify-items: center;
+        text-align: center;
+    }
+    .footer-copyright {
+        align-items: center;
+    }
+    .footer-nav {
+        align-items: center;
+    }
+    .footer-social {
+        justify-self: center;
+        text-align: center;
+    }
+    .social-icons-wrapper {
+        justify-content: center;
+    }
+}
