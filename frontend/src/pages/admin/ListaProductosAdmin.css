@@ -1,0 +1,42 @@
+.section-divider {
+    margin: 40px 0;
+    border: 0;
+    border-top: 2px solid #eee;
+}
+
+.admin-product-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+}
+
+.admin-product-table th,
+.admin-product-table td {
+    border: 1px solid #CED4DA; 
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.admin-product-table th {
+    background-color: #f8f9fa; 
+    color: #2D3142; 
+    font-weight: 700;
+}
+
+.admin-product-table tr:nth-child(even) {
+    background-color: #fdfdfd; 
+}
+
+.btn-eliminar {
+    background-color: #E76F51; 
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-eliminar:hover {
+    opacity: 0.9;
+}
