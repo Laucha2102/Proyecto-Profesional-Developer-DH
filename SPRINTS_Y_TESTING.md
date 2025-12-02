@@ -44,6 +44,13 @@
 
 **Objetivo:** Verificar el correcto funcionamiento de los flujos principales de la aplicación ReservaYa.
 
+**🔑 Credenciales de Acceso (Administrador)**
+Para realizar las pruebas de administración y creación de productos, utilice:
+
+* **Usuario:** lautaro.bustosroldan@gmail.com
+* **Contraseña:** Roldan12
+
+
 **1. Caso de Prueba: Registro e Inicio de Sesión**
 * **Acción:** Ingresar a "Crear cuenta", completar formulario con datos válidos y enviar. Luego, intentar "Iniciar sesión" con esas credenciales.
 * **Resultado Esperado:** El sistema registra al usuario, permite el login y redirige al Home mostrando las iniciales del usuario en el Header.
