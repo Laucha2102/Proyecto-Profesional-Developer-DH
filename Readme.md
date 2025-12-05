@@ -1,7 +1,7 @@
 # 🏨 ReservaYa: Plataforma de Reservas de Alojamientos
 
 ## 👥 Equipo de Desarrollo
-* **Lautaro Bustos Roldan** - Full Stack Developer
+* **Lautaro Bustos Roldan** 
 
 ## 📝 Descripción del Proyecto
 **ReservaYa** es una plataforma de reservas de alojamiento diseñada para gestionar productos, usuarios, seguridad y el flujo completo de reservas turísticas.
