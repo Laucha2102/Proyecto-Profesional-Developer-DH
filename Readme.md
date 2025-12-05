@@ -1,7 +1,10 @@
 # 🏨 ReservaYa: Plataforma de Reservas de Alojamientos
 
+## 👥 Equipo de Desarrollo
+* **Lautaro Bustos Roldan** - Full Stack Developer
+
 ## 📝 Descripción del Proyecto
-**ReservaYa** es una plataforma de reservas de alojamiento *full-stack* diseñada para gestionar productos, usuarios, seguridad y el flujo completo de reservas turísticas.
+**ReservaYa** es una plataforma de reservas de alojamiento diseñada para gestionar productos, usuarios, seguridad y el flujo completo de reservas turísticas.
 
 El proyecto fue desarrollado simulando un entorno profesional bajo metodología **Scrum**, implementando una **Arquitectura RESTful de 3 Capas** (Backend, Servicios y Datos), con un enfoque riguroso en la persistencia de datos (MySQL/JPA) y la seguridad informática (JWT).
 
@@ -16,7 +19,7 @@ El proyecto fue desarrollado simulando un entorno profesional bajo metodología 
 
 ---
 
-## 🗺️ Roadmap de Desarrollo (Detalle por Sprints)
+## 🗺️ Roadmap de Desarrollo 
 A continuación se detallan las funcionalidades implementadas en cada iteración, basadas en las Historias de Usuario (US) aprobadas.
 
 ### 🚩 Sprint 1: MVP e Infraestructura Base
@@ -70,10 +73,10 @@ A continuación se detallan las funcionalidades implementadas en cada iteración
 
 ## 🛠️ Guía de Despliegue e Instalación Local
 
-Sigue estos pasos detallados para levantar el ecosistema completo (DB + Back + Front) en tu entorno local.
+En estos pasos es detallado la forma para levantar el ecosistema completo (DB + Back + Front) en el entorno local.
 
 ### 📋 Prerrequisitos del Sistema
-Asegúrate de tener instalado y configurado lo siguiente en tu `PATH`:
+Tener instalado y configurado en `PATH`:
 * **Java:** JDK 17 o superior (`java -version`).
 * **Node.js:** v16.14.0 o superior (`node -v`).
 * **Base de Datos:** MySQL Server 8.0+.
@@ -83,11 +86,11 @@ Asegúrate de tener instalado y configurado lo siguiente en tu `PATH`:
 Es necesario configurar el esquema y el juego de caracteres.
 1.  Acceder a tu cliente MySQL (Workbench/DBeaver) y ejecutar:
     ```sql
-    CREATE DATABASE reservaya_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+    CREATE DATABASE digital_bookingdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
     ```
-2.  **(MUY IMPORTANTE)** Ejecutar el script de carga de datos iniciales ubicado en `/resources/data.sql` para tener usuarios y productos de prueba.
+2.  Ejecutar la carga de datos iniciales ubicado en `digital_booking` para tener usuarios y productos de prueba.
 3.  Verificar credenciales en `src/main/resources/application.properties`:
-    * `spring.datasource.url=jdbc:mysql://localhost:3306/reservaya_db`
+    * `spring.datasource.url=jdbc:mysql://localhost:3306/digital_booking_db`
     * `spring.datasource.username=root`
     * `spring.datasource.password=TU_PASSWORD`
 
@@ -115,17 +118,3 @@ Es necesario configurar el esquema y el juego de caracteres.
     ```
 3.  La aplicación estará disponible en `http://localhost:5173`.
 
----
-
-### ⚠️ Solución de Problemas (Troubleshooting)
-
-| Error | Causa Probable | Solución |
-| :--- | :--- | :--- |
-| **Port 8080 already in use** | Otro servicio ocupa el puerto. | Ejecuta `lsof -i :8080` (Mac/Linux) o cambia el puerto en `application.properties`. |
-| **CORS Policy Error** | Bloqueo de seguridad del navegador. | Verifica la configuración `@CrossOrigin` o el filtro de seguridad en el Controller. |
-| **Connection Refused** | MySQL detenido. | Revisa que el servicio de MySQL esté corriendo en Servicios. |
-
----
-
-## 👥 Equipo de Desarrollo
-* **Lautaro Bustos Roldan** - Full Stack Developer
